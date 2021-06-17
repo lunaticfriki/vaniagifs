@@ -17,7 +17,7 @@ const AddCategory = ({ setCategories }) => {
     <div className="c-add-category">
       <form onSubmit={handleSubmit}>
         <input
-          placeholder={'Category name'}
+          placeholder={'Search..'}
           value={value}
           type="text"
           onChange={handleChange}
