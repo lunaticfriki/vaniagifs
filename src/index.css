@@ -1,13 +1,113 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+    color: gray;
+}
+
+header {
+    border-block-end: 1px solid rgb(196, 6, 123);
+}
+
+h1 {
+    color: rgb(196, 6, 123);
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    font-weight: 300;
+}
+
+h2 {
+    color: rgb(196, 6, 123);
+    font-size: clamp(0.7rem, 4vw, 1rem);
+    font-weight: 300;
+}
+
+h3 {
+    font-weight: 300;
+}
+
+h4 {
+    color: rgb(196, 6, 123);
+    font-weight: 300;
+    margin:  1rem 0;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+input {
+    width: 15rem;
+    padding: 0.5rem 0;
+    border: none;
+    border-block-end: 1px solid rgb(211, 209, 209);
+    background-color: transparent;
+    color: rgb(211, 209, 209);;
+    margin-block-end: 1rem;
+    text-align: right;
+    font-size: 1.2rem;
+}
+
+input[type='submit'] {
+    width: 10rem;
+    background-color: transparent;
+    color: rgb(196, 6, 123);
+    border: none;
+    cursor: pointer;
+}
+
+ol {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.c-vaniagif {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto  1fr;
+    width: 100%;
+    padding: 1rem;
+}
+
+.c-add-category {
+    width: 100%;
+}
+
+.c-category {
+    width: 100%;
+}
+
+.c-category > header {
+    border: none;
+}
+
+.c-category > section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.c-gif-card {
+    margin: 1rem;
+    align-content: center;
+    overflow: hidden;
 }
