@@ -8,7 +8,9 @@ const VaniaGifApp = () => {
   return (
     <div className="c-vaniagif">
       <header>
-        <h1>Vaniagifs!</h1>
+        <h1 className="c-gif-card animate__animated animate__bounce">
+          Vaniagifs!
+        </h1>
         <AddCategory setCategories={setCategories} />
       </header>
       <ol>
